@@ -17,7 +17,7 @@ def accuracyCalculation(sen,written):#This function calculates the accuracy of w
                 count=count+1 #increment the count by 1 if they are matched
         return (count/len(sen)) #this return statement returns accuracy(returns 1 if all the characters are matched)
 
-    elif(len(sen)>len(written)):
+    elif(len(sen)>len(written)):    #condition to check the written sentence is equal to actual sentence 
         #print("You haven't entered the complete text")
         return 0
 
@@ -33,7 +33,7 @@ def collectSentence():#file handling
             sentenceslist.append(myline.rstrip())#appending all the sentences to the sentenceslist
             #print(myline) 
             #print(sentenceslist)
-    return sentenceslist#return the list
+    return sentenceslist            #return the list
 
 
 def playGame():    #This functions interacts with the user
