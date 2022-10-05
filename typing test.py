@@ -3,6 +3,8 @@ import time #import time module
 import sys #import sys module
 from threading import Timer #importing Timer from threading
 
+#import pip install and import sys
+
 def speedCalculation(sen,initial,final): #This function is used to calculate the speed of the words typed the 
     words=sen.count(" ")+1 #words calculates the total number of words by counting the number of spaces
     timediff=final-initial #timediff calculates the time taken for typing the sentance
